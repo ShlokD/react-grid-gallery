@@ -1,0 +1,18 @@
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+@media screen and (max-width: 767px) {
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);    
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .gallery-container {
+    display: block;
+  }
+}
+

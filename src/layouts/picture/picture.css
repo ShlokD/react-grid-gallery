@@ -1,0 +1,49 @@
+.picture {
+  border: 12px solid #FEFAE0;
+  background: #FEFAE0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.picture-flip > .picture-text-container {
+  transform: rotateY(180deg);
+}
+
+
+.picture-text-container {
+  transition: all ease 0.8s;
+  transform-style: preserve-3d;
+}
+
+.placeholder-picture {
+  background: #011936;
+}
+
+.picture-image,.picture-description {
+  top: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+}
+
+.picture-image {
+  margin: 0;
+  z-index: 2;
+}
+
+.picture-description {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 50%;
+}
+
+.visible {
+  display: inline-block;
+}
+
+.invisible {
+  display: none;
+}
+
+

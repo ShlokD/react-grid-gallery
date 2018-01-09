@@ -1,0 +1,11 @@
+header {
+  width: 100%;
+  padding: 5%;
+
+  background: #011936;
+  font-size: 2em;
+}
+
+.heading-a {
+  color: #F9F5FF;  
+}
