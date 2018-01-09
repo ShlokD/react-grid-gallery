@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import LazyLoad from 'react-lazyload'
+
 import './picture.css'
 
 class Picture extends Component {
@@ -31,7 +33,9 @@ class Picture extends Component {
             <h4>{title}</h4>
             <p>{artist}</p>
           </div>
-          <img className="picture-image" src={imgSrc} />
+          <LazyLoad height={388}>
+            <img className="picture-image" src={imgSrc} />
+          </LazyLoad>
         </div>
       </div>
     ) : (
